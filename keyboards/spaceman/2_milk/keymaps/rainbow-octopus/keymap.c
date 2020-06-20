@@ -5,8 +5,6 @@ enum tapdance_keycodes {
     TD_KEY_2,
 };
 
-const uint32_t PROGMEM unicode_map[] = {};
-
 void dance_key_one (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 3 && state->pressed) {
         cycle_unicode_input_mode(+1);
